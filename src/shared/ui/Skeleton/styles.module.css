@@ -1,0 +1,22 @@
+.skeletonList {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.skeletonCard {
+    height: 135px;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #dddddd 0%, #c6c6c6 50%, #dddddd 100%);
+    background-size: 400% 400%;
+    animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: -135% 0%;
+    }
+  }

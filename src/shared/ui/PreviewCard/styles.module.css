@@ -1,0 +1,21 @@
+.article {
+  display: flex;
+  gap: 20px;
+  height: 250px;
+  width: 100%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.img {
+  height: 100%;
+  width: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.description {
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.notActive {
+  color: #585858;
+  transition: color 0.3s ease;
+}
+
+.isActive,
+.isActive:hover {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.notActive:hover {
+  color: #080808;
+}

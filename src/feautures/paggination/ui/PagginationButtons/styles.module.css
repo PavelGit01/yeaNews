@@ -1,0 +1,9 @@
+.pagginationContainer {
+    display: flex;
+    gap: 10px;
+}
+.pagginationButton {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

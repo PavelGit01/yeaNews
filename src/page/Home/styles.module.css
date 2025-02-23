@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  justify-content: space-between;
+}

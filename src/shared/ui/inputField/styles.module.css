@@ -1,0 +1,12 @@
+.textLabel {
+    margin-bottom: 5px;
+}
+.input {
+    padding: 7px 5px;
+    width: 100%;
+}
+.error {
+    font-size: 14px;
+  height: 25px;
+  color: red;
+}

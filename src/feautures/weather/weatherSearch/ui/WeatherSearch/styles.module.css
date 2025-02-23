@@ -1,0 +1,12 @@
+.handleFeauturesContainer {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+.input {
+  width: 300px;
+  padding: 3px 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: 0;
+}
