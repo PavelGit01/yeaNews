@@ -1,8 +1,8 @@
 import { useAppSelector } from "@/app/appStore";
 import { useGetCurrencyRatesQuery } from "@/entities/currency/api/api";
 import { CurrencyCalc, CurrencyList } from "@/widget/currency/ui";
-import styles from "./styles.module.css";
 import { CircleLoader } from "@/shared/loaders";
+import styles from "./styles.module.css";
 
 const Currency = () => {
   const primaryCurrency = useAppSelector(
@@ -14,7 +14,7 @@ const Currency = () => {
 
   if (isLoading) return <CircleLoader />;
 
-  if (isError && !data)
+  if (isError || !data)
     return <p>Не удалось загрузить данные о валюте. Попробуйте позже.</p>;
 
   return (

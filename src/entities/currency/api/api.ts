@@ -1,13 +1,13 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { API_KEY_CURRENCY, BASE_URL_CURRENCY } from "@/shared/config/api";
+import { BASE_URL_CURRENCY } from "@/shared/config/api";
 import { actualCurrencies } from "@/shared/config/const";
-import { ICurrency } from "../model/types/types";
+import { CurrencyResponse, ICurrency } from "../model/types/types";
 
 const currencyApi = createApi({
   reducerPath: "currencyApi",
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL_CURRENCY }),
   endpoints: (build) => ({
-    getCurrencyRates: build.query({
+    getCurrencyRates: build.query<CurrencyResponse, ICurrency>({
       query: (selectCurrency: ICurrency) => ({
         url: "",
         params: {

@@ -14,7 +14,7 @@ const newsApi = createApi({
           _limit: 10,
         },
       }),
-      transformResponse: (response: unknown, meta) => {
+      transformResponse: (response, meta) => {
         return {
           posts: response as IPost[],
           totalPosts: Number(meta?.response?.headers.get("x-total-count")) || 0,
