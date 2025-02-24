@@ -33,11 +33,11 @@ const Fetcher = <T, U>({
   }, [isSuccess, data, queryArg]);
 
   if (isLoading) {
-    return loader && <p>Loading...</p>;
+    return loader || <p>Loading...</p>;
   }
 
   if (isError || !data) {
-    return error && <p>Ошибка при запросе данных.</p>;
+    return error || <p>Ошибка при запросе данных.</p>;
   }
 
   return render(data);
